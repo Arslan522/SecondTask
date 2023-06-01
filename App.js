@@ -2,8 +2,6 @@ import { View, StatusBar,StyleSheet, TouchableOpacity, Dimensions,Image, Video }
 import React, { useEffect, useState } from 'react';
 import VideoPlayer from 'react-native-video-controls';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import logo from './imgs/logo.png'
-
 
 export default function App() {
   useEffect(() => {
