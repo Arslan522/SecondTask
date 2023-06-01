@@ -46,13 +46,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  iconContainer: {
-    position: 'absolute',
-    top: 16,
-    right: 16,
-    zIndex: 1,
-    color: "white"
-  },
   logoCon: {
     marginTop: "1%",
     position: "absolute",
