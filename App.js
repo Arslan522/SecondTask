@@ -1,4 +1,4 @@
-import { View, StatusBar,StyleSheet, TouchableOpacity, Dimensions,Image, Video } from 'react-native';
+import { View, StatusBar, StyleSheet, TouchableOpacity, Dimensions, Image, Video } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import VideoPlayer from 'react-native-video-controls';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -6,39 +6,40 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 export default function App() {
   useEffect(() => {
     StatusBar.setHidden(true);
+
     return () => {
       StatusBar.setHidden(false);
     };
   }, []);
-   
+
   return (
     <View style={styles.container}>
-      
+
       <VideoPlayer
         source={require('./imgs/2.mp4')}
         disableBack={true}
         disableFullscreen={true}
         controlTimeout={5000}
-        />
-        <View style={styles.logoCon}>
-        <Image 
-        style={styles.logo}
-        resizeMode='contain'
-        source={require('./imgs/logo.png')}/>
-        </View>
-        <View style={styles.priceCon}>
-        <Image 
-        style={styles.price}
-        resizeMode='contain'
-        source={require('./imgs/price.png')}/>
-        </View>
-        <View style={styles.codeCon}>
-        <Image 
-        style={styles.code}
-        resizeMode='contain'
-        source={require('./imgs/code.png')}/>
-        </View>
+      />
+      <View style={styles.logoCon}>
+        <Image
+          style={styles.logo}
+          resizeMode='contain'
+          source={require('./imgs/logo.png')} />
       </View>
+      <View style={styles.priceCon}>
+        <Image
+          style={styles.price}
+          resizeMode='contain'
+          source={require('./imgs/price.png')} />
+      </View>
+      <View style={styles.codeCon}>
+        <Image
+          style={styles.code}
+          resizeMode='contain'
+          source={require('./imgs/code.png')} />
+      </View>
+    </View>
   );
 }
 const styles = StyleSheet.create({
@@ -52,30 +53,30 @@ const styles = StyleSheet.create({
     zIndex: 1,
     color: "white"
   },
-  logoCon:{
+  logoCon: {
     marginTop: "1%",
-    position:"absolute",
-    alignSelf:"center",
+    position: "absolute",
+    alignSelf: "center",
   },
-  logo:{
+  logo: {
     height: 20,
   },
-  priceCon:{
+  priceCon: {
     marginTop: 10,
-    position:"absolute",
-    alignSelf:"center",
-    top:"90%"
+    position: "absolute",
+    alignSelf: "center",
+    top: "90%"
   },
-  price:{
+  price: {
     height: 15,
   },
-  codeCon:{
+  codeCon: {
     marginTop: 10,
-    position:"absolute",
-    alignSelf:"flex-end",
-    top:"90%"
+    position: "absolute",
+    alignSelf: "flex-end",
+    top: "90%"
   },
-  code:{
+  code: {
     height: 18,
   },
 });
