@@ -40,23 +40,12 @@ export default function App() {
         resizeMode='contain'
         source={require('./imgs/code.png')}/>
         </View>
-        
-        
-        {/* <TouchableOpacity style={styles.iconContainer} onPress={handleIconClick}>
-        <Icon name="fullscreen" size={30} color="white" />
-      </TouchableOpacity> */}
-     
-      
-    </View>
+      </View>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  portraitVideo: {
-    width: '100%',
-    aspectRatio: 16 / 9, 
   },
   iconContainer: {
     position: 'absolute',
@@ -67,17 +56,14 @@ const styles = StyleSheet.create({
   },
   logoCon:{
     marginTop: "1%",
-    alignItems: 'center',
     position:"absolute",
     alignSelf:"center",
-    // backgroundColor:"blue"
   },
   logo:{
-    height: 15,
+    height: 20,
   },
   priceCon:{
     marginTop: 10,
-    alignItems: 'center',
     position:"absolute",
     alignSelf:"center",
     top:"90%"
@@ -87,13 +73,11 @@ const styles = StyleSheet.create({
   },
   codeCon:{
     marginTop: 10,
-    alignItems: 'flex-end',
     position:"absolute",
     alignSelf:"flex-end",
     top:"90%"
   },
   code:{
-    height: 15,
+    height: 18,
   },
 });
-
